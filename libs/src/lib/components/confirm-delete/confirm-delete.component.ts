@@ -22,7 +22,7 @@ export class ConfirmDeleteComponent {
 
     this.confirmer.emit(true);
     
-    this.toastr.success('le poste  a ete supprimer avec succès !', 'Succès', {
+    this.toastr.success('le poste supprimer avec succès !', 'Succès', {
 
       timeOut: 3000,
 

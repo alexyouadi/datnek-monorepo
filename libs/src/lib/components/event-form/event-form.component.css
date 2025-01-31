@@ -1,0 +1,45 @@
+.modal {
+  backdrop-filter: blur(2px);
+}
+
+.modal-content {
+  border-radius: 10px;
+  background: #fff /* Fond semi-transparent */
+}
+
+.modal-header {
+  background-color: rgba(248, 249, 250, 0.9);
+  border-bottom: 1px solid #e9ecef;
+}
+
+.modal-header .modal-title {
+  color: #007bff;
+}
+
+.cover-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  width: 70px;
+  margin-left: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+formly-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+formly-field {
+  margin-bottom: 15px;
+}

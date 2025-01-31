@@ -1,0 +1,23 @@
+<div class="modal" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="eventModalLabel">Créer un Événement</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"  (click)="closeModal()" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col-12 cover-photo">
+              <img id="cover-photo-preview" src="" alt="Photo de couverture">
+            </div>
+          </div>
+          <form [formGroup]="form" (ngSubmit)="validerFormulaire()">
+            <formly-form [model]="model" [fields]="fields" [options]="options" [form]="form"></formly-form>
+            <button type="submit" class="btn btn-primary">Publier</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

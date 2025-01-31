@@ -1,0 +1,36 @@
+
+<div>
+
+    <datnek-app-post #posComponent  (createEvent$) ="openModal()"> </datnek-app-post>
+
+    <div class="event-list">
+
+      <div *ngIf="events$ | async as events">
+
+        <div *ngFor="let event of events">
+
+          <datnek-app-event-item
+
+          [event]="event"
+          
+          (modificationEnvoyer)="recevoirModification($event)"
+
+          (suppresionEnvoyer)="recevoirSuppresion($event.id)"
+
+          ></datnek-app-event-item>
+        </div>
+      </div>
+    </div>
+  
+</div>
+  
+  <datnek-app-event-form #eventFormModal (confirmeFormulaire)="onFormSubmit($event)" ></datnek-app-event-form>
+
+  
+  <datnek-app-confirm-delete  #eventConfirmDelete (confirmer)="onConfirmDelete($event)"></datnek-app-confirm-delete>
+
+
+
+   
+
+ 

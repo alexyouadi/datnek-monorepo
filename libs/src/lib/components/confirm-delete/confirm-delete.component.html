@@ -1,0 +1,40 @@
+<!-- <div class="modal" id="confirmDeleteModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Confirmation de suppression</h5>
+          <button type="button" class="close" (click)="annuler()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Êtes-vous sûr de vouloir supprimer cet événement ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" (click)="confirmeSupresion()">Oui</button>
+          <button type="button" class="btn btn-secondary" (click)="annuler()">Non</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+  <div class="modal" id="confirmDeleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteModalLabel">Supprimer le post</h5>
+          <button type="button" class="btn-close" (click)="annuler()" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Voulez-vous vraiment supprimer cet post ?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="annuler()" data-bs-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-danger" (click)="confirmeSupresion()">Supprimer</button>
+        </div>
+      </div>
+    </div>
+  

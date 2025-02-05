@@ -1,0 +1,97 @@
+.centered-container {
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: center;
+    width: 500px;
+    height: 100vh;
+    padding-left: 400px;
+    padding-right: 10px; /* Ajouter du padding pour ajuster la position */
+  }
+  
+  .event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Réduire l'espace entre les cartes */
+  }
+  
+  .event-item {
+    max-width: 500px; /* Largeur maximale pour une meilleure présentation */
+    width: 100%;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments à l'intérieur de la carte */
+    text-align: center; /* Centrer le texte */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-details {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .card-subtitle {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .card-time {
+    font-size: 0.875rem;
+    color: #999;
+  }
+  
+  .social-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .blurred {
+    filter: blur(5px); /* Appliquer un effet de flou */
+    pointer-events: none; /* Désactiver les interactions avec le contenu flouté */
+  }
+  
+  .voir-plus {
+    color: #999;
+    cursor: none;
+  }
+  

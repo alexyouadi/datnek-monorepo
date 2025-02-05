@@ -1,0 +1,38 @@
+
+
+<div class="centered-container">
+    <div class="event-list">
+      <div class="event-item card">
+        <div class="card-body">
+          <div class="user-info">
+            <img src="path-to-profile-picture.jpg" class="profile-picture" alt="Profile Picture">
+            <div class="user-details">
+              <h5 class="card-title">{{ event.nom }}</h5>
+              <p class="card-subtitle">Graphic Designer Senior</p>
+              <p class="card-time">Publié  dans </p>
+            </div>
+            <button class="btn btn-link"  (click)="Menu(event)" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" (click)="onEdite(event)">{{'Modifier'| translate}}</a></li>
+              <li><a class="dropdown-item text-danger" (click)="openModalConfinDelete(event)">{{'Supprimer' | translate}}</a></li>
+            </ul>
+          </div>
+          <p class="card-text" translate>{{'message'}}</p>
+          <button class="btn btn-link voir-plus">Voir plus</button>
+          <div class="social-info">
+            <span class="likes" translate>likes</span>
+            <span class="comments" translate> commentaires</span>
+            <span class="shares" translate> partages</span>
+          </div>
+          <div class="social-buttons">
+            <button class="btn btn-primary" translate>like</button>
+            <button class="btn btn-secondary" translate>commentaires</button>
+            <button class="btn btn-success" translate>partages</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

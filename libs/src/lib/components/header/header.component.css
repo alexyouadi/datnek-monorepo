@@ -1,0 +1,115 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo img {
+  height: 50px; /* Augmenter la taille de l'image du logo */
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+}
+
+.header .nav .nav-item {
+  margin: 0 15px; /* Augmenter l'espacement entre les éléments de navigation */
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  font-size: 16px; /* Augmenter la taille de la police des éléments de navigation */
+  transition: color 0.3s ease;
+}
+
+.header .nav .nav-item:hover {
+  color: #007bff; /* Changer la couleur au survol */
+}
+
+.header .nav .nav-item .badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #dc3545; /* Utiliser une couleur Bootstrap pour la badge */
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px; /* Ajuster la taille de la police de la badge */
+}
+
+.search-bar input {
+  padding: 0px; /* Ajouter du padding pour plus de confort */
+  border-radius: 70px; /* Garder les bords arrondis */
+  
+}
+
+/* */
+
+.header .nav .profile {
+  display: flex;
+  align-items: center;
+}
+
+.header .nav .profile img {
+  height: 40px; /* Augmenter la taille de l'image de profil */
+  border-radius: 50%;
+  margin-right: 10px; /* Augmenter l'espacement à droite de l'image */
+  transition: transform 0.3s ease;
+}
+
+.header .nav .profile img:hover {
+  transform: scale(1.1); /* Ajouter une animation de zoom au survol */
+}
+
+
+
+/* language-dropdown.component.css or styles.css */
+
+/* ... (previous styles for toggle and items) ... */
+
+.dropdown-language .dropdown-menu {
+  border: 1px solid #ced4da; /* Add a border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Add a subtle shadow */
+  background-color: #fff; /* Set background color */
+  min-width: 100%; /* Ensure full width */
+  padding: 0.5rem 0; /* Add some padding */
+  font-size: 0.9rem; /* Adjust font size if needed */
+}
+
+.dropdown-language .dropdown-item {
+  color: #333; /* Set text color */
+  padding: 0.5rem 1rem; /* Adjust padding */
+  cursor: pointer; /* Indicate interactivity */
+  transition: background-color 0.2s ease; /* Add smooth transition for hover effect */
+}
+
+.dropdown-language .dropdown-item:hover {
+  background-color: #f8f9fa; /* Add hover background color */
+}
+
+.dropdown-language .dropdown-item.active, /* Style the active/selected item */
+.dropdown-language .dropdown-item:active {
+  background-color: #007bff; /* Use primary color */
+  color: #fff;
+}
+
+/* Optional: Add a separator between items */
+.dropdown-language .dropdown-item + .dropdown-item {
+  border-top: 1px solid #eee;
+}
+
+/* Optional: Style the flag icon within the menu */
+.dropdown-language .dropdown-item .flag-icon {
+  width: 1.2rem; /* Adjust flag icon size */
+  height: 1.2rem;
+  vertical-align: middle; /* Align vertically with text */
+  margin-right: 0.5rem;
+}
+
+/* Optional: Make the dropdown menu rounded */
+.dropdown-language .dropdown-menu {
+    border-radius: 0.25rem;
+}

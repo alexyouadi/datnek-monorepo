@@ -1,0 +1,40 @@
+<header class="header">
+    <div class="logo">
+      <img src="assets/logo.png" alt="delenscio logo">
+    </div>
+    <nav class="nav">
+      <div>
+        <a href="#" class="nav-item" translate>{{' MENU.Home '}}</a>
+        <a href="#" class="nav-item" translate>{{'MENU.Network'}}</a>
+        <a href="#" class="nav-item" translate>{{'MENU.Jobs'}}</a>
+        <a href="#" class="nav-item" translate>{{'MENU.Network'}}</a>
+        <a href="#" class="nav-item" translate>{{'MENU.Notifications'}}<span class="badge">9</span></a>
+        <a href="#" class="nav-item" translate>{{'MENU.Groups'}}</a>
+      </div>
+  
+
+
+      <ul class="nav navbar-nav align-items-center ml-auto">
+        <li ngbDropdownMenu class="nav-item dropdown dropdown-language">
+          <a class="nav-link dropdown-toggle"  id="dropdown-flag" ngbDropdownToggle>
+            <i class="flag-icon flag-icon-{{ languageOptions[_translateservice.currentLang]?.flag }}"></i> <span class="selected-language">{{ languageOptions[_translateservice.currentLang]?.title | translate }}</span> </a>
+          <div ngbDropdownMenu aria-labelledby="dropdown-flag">
+            <a *ngFor="let lang of _translateservice.getLangs()" ngbDropdownItem (click)="setLanguage(lang)">
+              <i class="flag-icon flag-icon-{{ languageOptions[lang]?.flag }}"></i> {{ languageOptions[lang]?.title | translate }}
+            </a>
+          </div>
+        </li>
+      </ul>
+      
+    </nav>
+    
+    <div class="search-bar">
+      <input type="text" [placeholder]="'PLACEHOLDERS.Search...'| translate">
+      <img src="assets/profile.png" alt="Profile">
+      <span>Bassahak...</span>
+    </div>
+    
+</header>
+  
+
+

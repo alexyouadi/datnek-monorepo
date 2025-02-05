@@ -1,10 +1,8 @@
 import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { appRoutes } from './app.routes';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {  HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { FormlyModule } from '@ngx-formly/core';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
@@ -15,16 +13,8 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { EventState, InMemoryDataService, IntervenantTypeComponent } from '@datnek-app/events';
-
-
-
-
-export function HttpLoaderFactory(http: HttpClient) {
-
-  return new TranslateHttpLoader(http, '');
-} 
-
-
+import { TranslateModule } from '@ngx-translate/core';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 export const appConfig: ApplicationConfig = {
@@ -46,18 +36,13 @@ export const appConfig: ApplicationConfig = {
       ],
     }),
     FormlyBootstrapModule,
+
     BrowserAnimationsModule, // Pour les animations
+    
     ToastrModule.forRoot() // Configuration de base,
 ,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-
-        useFactory: HttpLoaderFactory,
-
-        deps: [HttpClient]
-      }
-    }),
+    TranslateModule.forRoot(),  NgbDropdownModule ,
+    
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 500 }),
 
     NgMultiSelectDropDownModule.forRoot(),

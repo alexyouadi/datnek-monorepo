@@ -22,8 +22,7 @@ import { CommonModule } from '@angular/common';
           [formControl]="formControl"
           class="form-control"
           (focus)="onFocus()"
-          (input)="onInput($event)"
-          (blur)="onBlur()"
+          
           placeholder="Rechercher ou ajouter un intervenant"
         />
       </div>

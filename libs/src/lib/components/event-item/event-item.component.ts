@@ -2,11 +2,12 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EventInput } from '../../dto/input/event.input';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'datnek-app-event-item',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './event-item.component.html',
   styleUrl: './event-item.component.css',
 })

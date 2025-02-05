@@ -15,21 +15,21 @@
               <i class="fas fa-ellipsis-v"></i>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" (click)="onEdite(event)">Modifier</a></li>
-              <li><a class="dropdown-item text-danger" (click)="openModalConfinDelete(event)">Supprimer</a></li>
+              <li><a class="dropdown-item" (click)="onEdite(event)">{{'Modifier'| translate}}</a></li>
+              <li><a class="dropdown-item text-danger" (click)="openModalConfinDelete(event)">{{'Supprimer' | translate}}</a></li>
             </ul>
           </div>
-          <p class="card-text">Comprendre le problème: Avant d'appliquer un pattern, assurez-vous de bien comprendre le problème que vous essayez de résoudre. • Choisir le bon pattern: Il n'y a pas de pattern universel. Choisissez celui qui correspond le mieux à votre contexte. • Simplifier: Évitez de sur-utiliser les patterns. Un code simple et clair est souvent préférable. • Tester: Implémentez des tests unitaires pour vérifier que votre code fonctionne comme prévu. • Réviser régulièrement: Les besoins évoluent, il est important de revoir régulièrement votre code et d'ajuster les patterns utilisés.</p>
+          <p class="card-text" translate>{{'message'}}</p>
           <button class="btn btn-link voir-plus">Voir plus</button>
           <div class="social-info">
-            <span class="likes">likes</span>
-            <span class="comments"> commentaires</span>
-            <span class="shares"> partages</span>
+            <span class="likes" translate>likes</span>
+            <span class="comments" translate> commentaires</span>
+            <span class="shares" translate> partages</span>
           </div>
           <div class="social-buttons">
-            <button class="btn btn-primary" >Like</button>
-            <button class="btn btn-secondary">Commentaire</button>
-            <button class="btn btn-success">Partager</button>
+            <button class="btn btn-primary" translate>like</button>
+            <button class="btn btn-secondary" translate>commentaires</button>
+            <button class="btn btn-success" translate>partages</button>
           </div>
         </div>
       </div>

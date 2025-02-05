@@ -1,11 +1,12 @@
 import { Component ,Output} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Subject } from 'rxjs';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'datnek-app-post',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './post.component.html',
   styleUrl: './post.component.css',
 })

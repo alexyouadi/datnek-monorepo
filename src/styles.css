@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/* Style général du menu déroulant */
+.dropdown-language .dropdown-toggle {
+    /* Style du bouton principal (drapeau + texte) */
+    display: flex; /* Pour aligner le drapeau et le texte horizontalement */
+    align-items: center; /* Pour centrer verticalement le contenu */
+    padding: 0.5rem 1rem; /* Ajustez le padding selon vos besoins */
+    border: none; /* Supprime les bordures par défaut */
+    background-color: transparent; /* Fond transparent */
+    cursor: pointer; /* Curseur de la souris au survol */
+  }
+  
+  .dropdown-language .dropdown-toggle .flag-icon {
+    /* Style des icônes de drapeau (si vous utilisez des icônes de drapeau) */
+    margin-right: 0.5rem; /* Espacement entre le drapeau et le texte */
+  }
+  
+  .dropdown-language .dropdown-toggle .selected-language {
+    /* Style du texte de la langue sélectionnée */
+    font-weight: bold;
+  }
+  
+  .dropdown-language .dropdown-menu {
+    /* Style du menu déroulant */
+    border: 1px solid #ccc; /* Bordure fine */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
+  }
+  
+  .dropdown-language .dropdown-item {
+    /* Style de chaque élément de langue dans le menu déroulant */
+    display: flex; /* Pour aligner le drapeau et le texte horizontalement */
+    align-items: center; /* Pour centrer verticalement le contenu */
+    cursor: pointer; /* Curseur de la souris au survol */
+  }
+  
+  .dropdown-language .dropdown-item .flag-icon {
+    /* Style des icônes de drapeau dans le menu déroulant */
+    margin-right: 0.5rem; /* Espacement entre le drapeau et le texte */
+  }
+  
+  

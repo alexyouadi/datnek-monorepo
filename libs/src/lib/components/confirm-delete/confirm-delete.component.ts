@@ -1,11 +1,12 @@
 import { Component, EventEmitter, Inject, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToastrService } from 'ngx-toastr';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'datnek-app-confirm-delete',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './confirm-delete.component.html',
   styleUrl: './confirm-delete.component.css',
 })

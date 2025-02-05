@@ -25,15 +25,15 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="deleteModalLabel">Supprimer le post</h5>
+          <h5 class="modal-title" id="deleteModalLabel" translate>{{'Supprimer le post '}}</h5>
           <button type="button" class="btn-close" (click)="annuler()" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          Voulez-vous vraiment supprimer cet post ?
+        <div class="modal-body" translate>
+          {{'Voulez-vous vraiment supprimer cet post ?'}}
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" (click)="annuler()" data-bs-dismiss="modal">Annuler</button>
-          <button type="button" class="btn btn-danger" (click)="confirmeSupresion()">Supprimer</button>
+          <button type="button" class="btn btn-secondary" (click)="annuler()" data-bs-dismiss="modal" translate="">{{'Annuler'}}</button>
+          <button type="button" class="btn btn-danger" (click)="confirmeSupresion()" translate="">{{'Supprimer'}}</button>
         </div>
       </div>
     </div>

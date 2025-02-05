@@ -46,10 +46,7 @@
   
 }
 
-.header .nav .search-bar input:focus {
-  border-color: #007bff; /* Changer la bordure au focus */
-  outline: none;
-}
+/* */
 
 .header .nav .profile {
   display: flex;
@@ -69,48 +66,50 @@
 
 
 
+/* language-dropdown.component.css or styles.css */
 
-
-
-
-
-
-/* Style général du menu déroulant */
-.dropdown-language .dropdown-toggle {
-  /* Style du bouton principal (drapeau + texte) */
-  display: flex; /* Pour aligner le drapeau et le texte horizontalement */
-  align-items: center; /* Pour centrer verticalement le contenu */
-  padding: 0.5rem 1rem; /* Ajustez le padding selon vos besoins */
-  border: none; /* Supprime les bordures par défaut */
-  background-color: transparent; /* Fond transparent */
-  cursor: pointer; /* Curseur de la souris au survol */
-}
-
-.dropdown-language .dropdown-toggle .flag-icon {
-  /* Style des icônes de drapeau (si vous utilisez des icônes de drapeau) */
-  margin-right: 0.5rem; /* Espacement entre le drapeau et le texte */
-}
-
-.dropdown-language .dropdown-toggle .selected-language {
-  /* Style du texte de la langue sélectionnée */
-  font-weight: bold;
-}
+/* ... (previous styles for toggle and items) ... */
 
 .dropdown-language .dropdown-menu {
-  /* Style du menu déroulant */
-  border: 1px solid #ccc; /* Bordure fine */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
+  border: 1px solid #ced4da; /* Add a border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Add a subtle shadow */
+  background-color: #fff; /* Set background color */
+  min-width: 100%; /* Ensure full width */
+  padding: 0.5rem 0; /* Add some padding */
+  font-size: 0.9rem; /* Adjust font size if needed */
 }
 
 .dropdown-language .dropdown-item {
-  /* Style de chaque élément de langue dans le menu déroulant */
-  display: flex; /* Pour aligner le drapeau et le texte horizontalement */
-  align-items: center; /* Pour centrer verticalement le contenu */
-  cursor: pointer; /* Curseur de la souris au survol */
+  color: #333; /* Set text color */
+  padding: 0.5rem 1rem; /* Adjust padding */
+  cursor: pointer; /* Indicate interactivity */
+  transition: background-color 0.2s ease; /* Add smooth transition for hover effect */
 }
 
+.dropdown-language .dropdown-item:hover {
+  background-color: #f8f9fa; /* Add hover background color */
+}
+
+.dropdown-language .dropdown-item.active, /* Style the active/selected item */
+.dropdown-language .dropdown-item:active {
+  background-color: #007bff; /* Use primary color */
+  color: #fff;
+}
+
+/* Optional: Add a separator between items */
+.dropdown-language .dropdown-item + .dropdown-item {
+  border-top: 1px solid #eee;
+}
+
+/* Optional: Style the flag icon within the menu */
 .dropdown-language .dropdown-item .flag-icon {
-  /* Style des icônes de drapeau dans le menu déroulant */
-  margin-right: 0.5rem; /* Espacement entre le drapeau et le texte */
+  width: 1.2rem; /* Adjust flag icon size */
+  height: 1.2rem;
+  vertical-align: middle; /* Align vertically with text */
+  margin-right: 0.5rem;
 }
 
+/* Optional: Make the dropdown menu rounded */
+.dropdown-language .dropdown-menu {
+    border-radius: 0.25rem;
+}

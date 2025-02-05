@@ -14,20 +14,18 @@
   
 
 
-      <li ngbDropdown class="nav-item dropdown dropdown-language">
-        <a class="nav-link dropdown-toggle" id="dropdown-flag" ngbDropdownToggle>
-          <i class="flag-icon flag-icon-{{ languageOptions[_translateservice.currentLang]?.flag }}">
-  
-          </i> <span class="selected-language">{{ languageOptions[_translateservice.currentLang]?.title | translate }}</span> </a>
-        <div ngbDropdownMenu aria-labelledby="dropdown-flag">
-          <a *ngFor="let lang of _translateservice.getLangs()" ngbDropdownItem (click)="setLanguage(lang)">
-            <i class="flag-icon flag-icon-{{ languageOptions[lang]?.flag }}"></i> {{ languageOptions[lang]?.title | translate }}
-          </a>
-        </div>
-      </li>
-  
+      <ul class="nav navbar-nav align-items-center ml-auto">
+        <li ngbDropdownMenu class="nav-item dropdown dropdown-language">
+          <a class="nav-link dropdown-toggle"  id="dropdown-flag" ngbDropdownToggle>
+            <i class="flag-icon flag-icon-{{ languageOptions[_translateservice.currentLang]?.flag }}"></i> <span class="selected-language">{{ languageOptions[_translateservice.currentLang]?.title | translate }}</span> </a>
+          <div ngbDropdownMenu aria-labelledby="dropdown-flag">
+            <a *ngFor="let lang of _translateservice.getLangs()" ngbDropdownItem (click)="setLanguage(lang)">
+              <i class="flag-icon flag-icon-{{ languageOptions[lang]?.flag }}"></i> {{ languageOptions[lang]?.title | translate }}
+            </a>
+          </div>
+        </li>
+      </ul>
       
-  
     </nav>
     
     <div class="search-bar">
